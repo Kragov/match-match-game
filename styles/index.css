@@ -1,0 +1,25 @@
+.card-container {
+    margin: auto;
+    width: 300px;
+    height: 300px; 
+    background-color: red;
+    animation: turn-around-card 2 ease reverse paused;
+}
+
+.turned-around-card-container {
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    animation: turn-around-card 2s ease-in;
+}
+
+@keyframes turn-around-card {
+    from { width: 300px;
+           background-color: red; }
+    50% { width: 0; }
+    to {
+        width: 300px;
+        background-color: #000;
+    }
+}
+
